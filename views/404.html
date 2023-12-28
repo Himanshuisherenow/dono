@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Your Website Title</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            font-family: 'Arial', sans-serif;
+            font-size: 3rem;
+            color: #333;
+            opacity: 0; /* Initially set opacity to 0 for fade-in effect */
+            transform: scale(0); /* Initially set scale to 0 for scale effect */
+            animation: fadeInScale 1s ease-out forwards; /* Apply the animation */
+        }
+
+        @keyframes fadeInScale {
+            0% {
+                opacity: 0;
+                transform: scale(0);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+  <h1>404 NOT FOUND</h1>
+    <script src="index.js"></script>
+</body>
+
+</html>
